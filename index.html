@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch with Date & Time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  
+
+<body class="light-mode">
+  <div class="app-container">
+    <header>
+      <h1>Stopwatch</h1>
+      <div class="mode-toggle" id="modeToggle">
+        <i class="fas fa-sun" id="sunIcon"></i>
+        <i class="fas fa-moon" id="moonIcon" style="display: none;"></i>
+      </div>
+    </header>
+
+    <div class="date-time">
+      <p id="currentDate">Date: --</p>
+      <p id="currentTime">Time: --</p>
+    </div>
+
+    <div class="stopwatch-display" id="stopwatch">00:00:00.00</div>
+
+    <div class="controls">
+      <button id="startButton" onclick="startStopwatch()">Start</button>
+      <button id="stopButton" onclick="stopStopwatch()">Stop</button>
+      <button id="resetButton" onclick="resetStopwatch()">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
